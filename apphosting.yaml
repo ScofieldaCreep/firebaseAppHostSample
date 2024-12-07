@@ -37,34 +37,7 @@ env:
 
   - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
     value: 'G-H3ZM9VQWGB'
-
-  - variable: apiKey
-    value: 'AIzaSyCaRRaQ4PxniY5-VwuSsU63AXNqcY4EgSA'
-
-  - variable: authDomain
-    value: 'algo-bot-1024.firebaseapp.com'
-
-  - variable: projectId
-    value: 'algo-bot-1024'
-
-  - variable: storageBucket
-    value: 'algo-bot-1024.firebasestorage.app'
-
-  - variable: messagingSenderId
-    value: '695802450138'
-
-  - variable: appId
-    value: '1:695802450138:web:2f4ff8b56d4e4f10c995e3'
-
 # Grant access to secrets in Cloud Secret Manager.
 # See https://firebase.google.com/docs/app-hosting/configure#secret-parameters
 # - variable: MY_SECRET
 #   secret: mySecretRef
-firebaseConfig:
-  apiKey: 'AIzaSyCaRRaQ4PxniY5-VwuSsU63AXNqcY4EgSA'
-  authDomain: 'algo-bot-1024.firebaseapp.com'
-  projectId: 'algo-bot-1024'
-  storageBucket: 'algo-bot-1024.firebasestorage.app'
-  messagingSenderId: '695802450138'
-  appId: '1:695802450138:web:2f4ff8b56d4e4f10c995e3'
-  measurementId: 'G-H3ZM9VQWGB'
