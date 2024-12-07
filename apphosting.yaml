@@ -1,14 +1,52 @@
+# Settings for Backend (on Cloud Run).
+# See https://firebase.google.com/docs/app-hosting/configure#cloud-run
+runConfig:
+  minInstances: 0
+  # maxInstances: 100
+  # concurrency: 80
+  # cpu: 1
+  # memoryMiB: 512
+
+# Environment variables and secrets.
+# env:
+# Configure environment variables.
+# See https://firebase.google.com/docs/app-hosting/configure#user-defined-environment
+# - variable: MESSAGE
+#   value: Hello world!
+#   availability:
+#     - BUILD
+#     - RUNTIME
 env:
-  # Get these values from the Firebase console
   - variable: NEXT_PUBLIC_FIREBASE_API_KEY
-    value: TODO
+    value: 'AIzaSyCaRRaQ4PxniY5-VwuSsU63AXNqcY4EgSA'
+
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-    value: TODO
+    value: 'algo-bot-1024.firebaseapp.com'
+
   - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
-    value: TODO
+    value: 'algo-bot-1024'
+
   - variable: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
-    value: TODO
+    value: 'algo-bot-1024.firebasestorage.app'
+
   - variable: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
-    value: TODO
+    value: '695802450138'
+
   - variable: NEXT_PUBLIC_FIREBASE_APP_ID
-    value: TODO
+    value: '1:695802450138:web:2f4ff8b56d4e4f10c995e3'
+
+  - variable: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+    value: 'G-H3ZM9VQWGB'
+
+# Grant access to secrets in Cloud Secret Manager.
+# See https://firebase.google.com/docs/app-hosting/configure#secret-parameters
+# - variable: MY_SECRET
+#   secret: mySecretRef
+firebaseConfig:
+  apiKey: 'AIzaSyCaRRaQ4PxniY5-VwuSsU63AXNqcY4EgSA'
+  authDomain: 'algo-bot-1024.firebaseapp.com'
+  projectId: 'algo-bot-1024'
+  storageBucket: 'algo-bot-1024.firebasestorage.app'
+  messagingSenderId: '695802450138'
+  appId: '1:695802450138:web:2f4ff8b56d4e4f10c995e3'
+  measurementId: 'G-H3ZM9VQWGB'
